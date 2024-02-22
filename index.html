@@ -13,8 +13,19 @@
  <!--ionIcons-->
  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!--Animation-->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!---light box --->
 
- 
+<!---Swiper--->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 <body>
 
@@ -26,7 +37,7 @@
     <!-- logo image -->
     <div class="site-logo">
       <a href="#home" class="navbar-brand">
-        <img src="372802-logo-6.jpg" alt="" class="img-fluid">
+        <img src="menu.png" alt="">
       </a>
     </div>
   </div>
@@ -45,6 +56,7 @@
   <!-- main menu-->
   <nav>
     <ul class="nav-menu">
+      
       <li class="menu-item active" data-id="home">
         <a href="#home" class="nav-link">
           <ion-icon name="home-outline"></ion-icon>
@@ -70,14 +82,24 @@
           <ion-icon name="server-outline"></ion-icon>
         </a>
       </li>
-      <li class="menu-item" data-id="blog">
-        <a href="#blog" class="nav-link">
+      <li class="menu-item" data-id="price">
+        <a href="#price" class="nav-link">
           <ion-icon name="create-outline"></ion-icon>
+        </a>
+      </li>
+      <li class="menu-item" data-id="reviews">
+        <a href="#reviews" class="nav-link">
+          <ion-icon name="people-outline"></ion-icon>
         </a>
       </li>
       <li class="menu-item" data-id="contact">
         <a href="#contact" class="nav-link">
           <ion-icon name="chatbubbles-outline"></ion-icon>
+        </a>
+      </li>
+      <li class="menu-item data-id="login">
+        <a href="#login" class="nav-link">
+          <ion-icon name="log-in-outline"></ion-icon>
         </a>
       </li>
     </ul>
@@ -90,11 +112,10 @@
 <main>
   <div class="container">
     <section class="home" id="home">
-      <div class="home-content d-flex">
+      <div class="home-content d-flex ">
         <img src="cat.png" alt="">
         <h1>Zephyrka Studio Present</h1>
-        <p>Custom portraits,
-                  <span class="js-rotating">crafted with speed and quality.</span>
+        <p>Custom portraits,crafted with speed and quality
                   </p>
                   <ul class="social-icons d-flex">
                     <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
@@ -103,13 +124,409 @@
                     <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
                     <li><a href="#"><ion-icon name="logo-google"></ion-icon></a></li>
                   </ul>
-                  <a href="#" class="btn">Contact Us</a>
+                  <a href="https://www.instagram.com/zephyrka.studio/" class="btn">Contact Us</a>
       </div>
-      
     </section>
+    <section class="about" id="about">
+      <div class="section-title animate__animated">
+        <h1>About Us</h1>
+        
+      </div>
+      <div class="about-content d-flex">
+        <div class="about-data d-flex">
+          <div class="about-img">
+            <img src="marshmallow.png" alt="">
+          </div>
+          <div class="box d-flex">
+            <div class="text">
+              <p>Explore Zephyrka Studio—your hub for personalized portraits. Our skilled team blends creativity and precision to craft unique masterpieces, capturing your special moments</p>
+            <a href="#" class="btn">More informtion</a>
+            </div>
+            <div class="skills d-flex">
+              <div class="skill">
+                <div class="skill-info">
+                  <h4>Photoshop</h4>
+                  <span>75%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="--clr: #ffd15c;--width: 75%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-info">
+                  <h4>Illustrator</h4>
+                  <span>90%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="--clr: #ff4c60;--width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-info">
+                  <h4>Adobe InDesign</h4>
+                  <span>70%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="--clr: #6c6ce5;--width:70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+           <div class="about-details d-flex">
+            <div class="about-item">
+              <ion-icon name="rocket-outline"></ion-icon>
+              <div>
+                <h2 data-target="712" class="count">0</h2>
+                <span>Total our projects</span>
+              </div>
+            </div>
+            <div class="about-item">
+              <ion-icon name="people-outline"></ion-icon>
+              <div>
+                <h2 data-target="124" class="count">0</h2>
+                <span>Satisfied clients</span>
+              </div>
+            </div>
+            <div class="about-item">
+              <ion-icon name="cafe-outline"></ion-icon>
+              <div>
+                <h2 data-target="891" class="count">0</h2>
+                <span>Cup of coffe</span>
+              </div>
+            </div>
+            <div class="about-item">
+              <ion-icon name="cafe-outline"></ion-icon>
+              <div>
+                <h2 data-target="8212" class="count">0</h2>
+                <span>Hours of Dedication</span>
+              </div>
+            </div>
+           </div>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="section-title animate__animated">
+        <h1 class="service-title">Our services</h1>
+      </div>
+      <div class="services-content">
+        <div class="services-item" style="--clr2: #6c6ce5">
+           <img src="family-picture.png" alt="">
+           <h3>
+            Custom illustrations:</h3>
+           <p>
+            Custom illustrations bring your visions to life through a captivating blend of creativity and technique. From portraits to editorial projects, we provide distinctive and personalized illustrations.</p>
+        </div>
+        <div class="services-item" style="--clr2: #f9d74c">
+          <img src="photography.png" alt="">
+          <h3>Professional Photography:</h3>
+          <p>
+            We capture unique and memorable moments, from events to products, bringing your story to life through high-quality images.     
+            </div>
+       <div class="services-item" style="--clr2: #ff4c60">
+        <img src="clothing.png" alt="">
+        <h3>Custom Clothing and Print Services:</h3>
+        <p>
+          Elevate your wardrobe with our fashionable customization options. We provide personalized printing on clothing, crafting original and bold designs. Whether it's t-shirts, hoodies, or other garments, we turn your ideas into customized fashion pieces, highlighting your style and individuality.   
+          </div>
+    </div>
+    <p class="lookingJob">Looking for a custom job? <a href="https://www.instagram.com/zephyrka.studio/">Click here</a> to contact us! &#128075; </p>
+    </section>
+      <section class="experience" id="experience">
+        <div class="section-title animate__animated">
+          <h1>Experince</h1>
+        </div>
+        <div class="experience-boxs d-flex">
+          <div class="box">
+            <div class="experience-item animate__animated">
+              <span class="time">Bla bla bla</span>
+              <h3 class="title">Text nr 4</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quia consequuntur quae, est deserunt corporis ex dolorum minima cumque maiores reprehenderit nam quos modi necessitatibus enim in soluta. Suscipit, explicabo!</p>
+            </div>
+            <div class="experience-item animate__animated">
+              <span class="time">2024-</span>
+              <h3 class="title">Text nr 4</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quia consequuntur quae, est deserunt corporis ex dolorum minima cumque maiores reprehenderit nam quos modi necessitatibus enim in soluta. Suscipit, explicabo!</p>
+            </div>
+            <div class="experience-item animate__animated">
+              <span class="time">2024-present</span>
+              <h3 class="title">Text nr 4</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quia consequuntur quae, est deserunt corporis ex dolorum minima cumque maiores reprehenderit nam quos modi necessitatibus enim in soluta. Suscipit, explicabo!</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="experience-item animate__animated">
+              <span class="time">Photo shop</span>
+              <h3 class="title">Text nr 4</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quia consequuntur quae, est deserunt corporis ex dolorum minima cumque maiores reprehenderit nam quos modi necessitatibus enim in soluta. Suscipit, explicabo!</p>
+            </div>
+            <div class="experience-item animate__animated">
+              <span class="time">2024-</span>
+              <h3 class="title">Text nr 4</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quia consequuntur quae, est deserunt corporis ex dolorum minima cumque maiores reprehenderit nam quos modi necessitatibus enim in soluta. Suscipit, explicabo!</p>
+            </div>
+            <div class="experience-item animate__animated">
+              <span class="time">2024-present</span>
+              <h3 class="title">Text nr 4</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quia consequuntur quae, est deserunt corporis ex dolorum minima cumque maiores reprehenderit nam quos modi necessitatibus enim in soluta. Suscipit, explicabo!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="work" id="works">
+        <div class="section-title animate__animated">
+          <h1>Recent Works</h1>
+        </div>
+        <div class="works-content">
+          <div class="centered-content">
+            <ul class="portfolio-filter">
+              <li class="current" data-filter="all">All</li>
+              <li data-filter=".app">Portreits</li>
+              <li data-filter=".card">Clothes</li>
+              <li data-filter=".web">Photos</li>
+            </ul>
+          </div>
+          <div class="work-items">
+            <div class="work-item mix app">
+              
+              <img src="1Cs.png" class="img-fluid" alt="">
+              <div class="work-details">
+                <div class="portfolio-links">
+                  <ion-icon name="eye-outline"></ion-icon>
+               
+                </div>
+                <div class="portfolio-info">
+                  <h4>App1</h4>
+                  <p>app</p>
+                </div>
+              </div>
+            </div>
+            <div class="work-item mix web">
+              <img src="Photography.avif" class="img-fluid" alt="">
+              <div class="work-details">
+                <div class="portfolio-links">
+                  <ion-icon name="eye-outline"></ion-icon>
+                
+                </div>
+                <div class="portfolio-info">
+                  <h4>Web 3</h4>
+                  <p>web</p>
+                </div>
+              </div>
+            </div>
+            <div class="work-item mix app">
+              <img src="1Cs.png" class="img-fluid" alt="">
+              <div class="work-details">
+                <div class="portfolio-links">
+                  <ion-icon name="eye-outline"></ion-icon>
+               
+                </div>
+                <div class="portfolio-info">
+                  <h4>App 2</h4>
+                  <p>app</p>
+                </div>
+              </div>
+            </div>
+            <div class="work-item mix card">
+              <img src="1Cs.png" class="img-fluid" alt="">
+              <div class="work-details">
+                <div class="portfolio-links">
+                  <ion-icon name="eye-outline"></ion-icon>
+                 
+                </div>
+                <div class="portfolio-info">
+                  <h4>Card 2</h4>
+                  <p>card</p>
+                </div>
+              </div>
+            </div>
+            <div class="work-item mix web">
+              <img src="clothing.png" class="img-fluid" alt="">
+              <div class="work-details">
+                <div class="portfolio-links">
+                  <ion-icon name="eye-outline"></ion-icon>
+                 
+                </div>
+                <div class="portfolio-info">
+                  <h4>Web 2</h4>
+                  <p>web</p>
+                </div>
+              </div>
+            </div>
+            <div class="work-item mix app">
+              <img src="clothing.png" class="img-fluid" alt="">
+              <div class="work-details">
+                <div class="portfolio-links">
+                  <ion-icon name="eye-outline"></ion-icon>
+                 
+                </div>
+                <div class="portfolio-info">
+                  <h4>App 3</h4>
+                  <p>app</p>
+                </div>
+              </div>
+            </div>
+            <div class="work-item mix app">
+              <img src="clothing.png" class="img-fluid" alt="">
+              <div class="work-details">
+                <div class="portfolio-links">
+                  <ion-icon name="eye-outline"></ion-icon>
+                  
+                </div>
+                <div class="portfolio-info">
+                  <h4>App 3</h4>
+                  <p>app</p>
+                </div>
+              </div>
+            </div>
+            <div class="work-item mix app">
+              <img src="clothing.png" class="img-fluid" alt="">
+              <div class="work-details">
+                <div class="portfolio-links">
+                  <ion-icon name="eye-outline"></ion-icon>
+                 
+                </div>
+                <div class="portfolio-info">
+                  <h4>App 3</h4>
+                  <p>app</p>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+         
+          </div>
+       
+      </section>
+      <section class="pricing" id="price">
+        <div class="section-title animate__animated">
+          <h1>Pricing Plans</h1>
+        </div>
+        <div class="price-content">
+          <div class="price-item">
+           
+            <img src="Price-list.png" alt="">
+            <h2>Cartoons</h2>
+            <p>Rick and Morty, Family Guy, Simpsons</p>
+          
+            <h3 class="price">
+              <em>$</em>
+          30
+            </h3>
+            <a href="#" class="btn">Get Started</a>
+          </div>
+          <div class="price-item">
+           <span class="badge">Most popular</span>
+            <img src="Price-list.png" alt="">
+            <h2>Anime/Movies</h2>
+            <p>Choose your favorite anime or movie</p>
+          
+            <h3 class="price">
+              <em>$</em>
+              35
+             
+            </h3>
+            <a href="#" class="btn">Get Started</a>
+          </div>
+          <div class="price-item">
+            <img src="Price-list.png" alt="">
+            <h2>Something custom</h2>
+            <p>Anime/Movies</p>
+           
+            <h3 class="price">
+              <em>$</em>
+              45
+             
+            </h3>
+            <a href="#" class="btn">Get Started</a>
+          </div>
+
+        </div>
+      </section>
+      <section class="clients" id="reviews">
+        <div class="section-title animate__animated">
+          <h1>Clients & Reviews</h1>
+        </div>
+        <div class="reviews-content">
+          <div class="reviews-top swiper">
+            <div class="slider swiper-wrapper">
+              <div class="reviews-item swiper-slide">
+                <div class="reviews-img">
+                  <img src="man.png" alt="">
+                  <h3>Oleg Neciporenko</h3>
+                  <span>Bla bla bla</span>
+                </div>
+                <div class="reviews-text">
+                  <p>Very Good!
+                    <br> My choose is Zephyrka &#128293
+                  </p>
+                </div>
+              </div>
+              <div class="reviews-item swiper-slide">
+                <div class="reviews-img">
+                  <img src="man.png" alt="">
+                  <h3>Oleg Neciporenko</h3>
+                  <span>Bla bla bla</span>
+                </div>
+                <div class="reviews-text">
+                  <p>Very Good!
+                    <br> My choose is Zephyrka &#128293
+                  </p>
+                </div>
+              </div>
+              <div class="reviews-item swiper-slide">
+                <div class="reviews-img">
+                  <img src="man.png" alt="">
+                  <h3>Oleg Neciporenko</h3>
+                  <span>Bla bla bla</span>
+                </div>
+                <div class="reviews-text">
+                  <p>Very Good!
+                    <br> My choose is Zephyrka &#128293
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          
+        </div>
+      </section>
+        <section class="contact" id="contact">
+          <div class="section-title animate__animated">
+            <h1>Get in Touch</h1>
+          </div>
+          <div class="contact-content">
+            <div class="contact-left">
+              <h3>Let's talk about everything!</h3>
+              <p>Don't like forms? Send me an <span>email</span>.&#128075;</p>
+            </div>
+            <div class="contact-right">
+              <form action="https://formspree.io/f/mzbngpvg" method="POST">
+              <div>
+                <input type="text" name="Name" placeholder="You name">
+                <input type="text" name="Email" placeholder="Email adress">
+              </div>
+              <input type="text" name="Subject" placeholder="Subject">
+              <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+              <button type="submit" class="btn">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      
   </div>
+  
 </main>
 
+<!----SWIPER-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-----  MixItUp js  ----->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!-----  Jquery ----->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
   <!-- Your custom script -->
