@@ -89,7 +89,7 @@ let mixer = mixitup(containerEl, {
 
   },
   animation:{
-    duration: 300,
+    duration: 550,
   }
 })
 
@@ -132,6 +132,7 @@ var swiper = new Swiper(".reviews-top", {
   },
 });
 
+
 //header active
 window.addEventListener('scroll', ()=>{
   function getClassActive(){
@@ -170,3 +171,4 @@ menuToggle.addEventListener('click', ()=>{
     menuToggle.style.transform = "translate(0)";
   }
 })
+

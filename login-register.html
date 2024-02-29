@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section class="login" id="login">
+  <div class="login-container">
+    <div class="login-form active" id="login-form">
+      <h2>Login</h2>
+      <form action="#" method="post">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit" class="btn">Login</button>
+      </form>
+      <div class="register-link">
+        Don't have an account? <a href="#" id="switch-to-register">Register here✅</a>.
+      </div>
+    </div>
+    <div class="login-form" id="register-form">
+      <h2>Register</h2>
+      <form action="#" method="POST">
+        <div>
+          <input type="text" name="username" placeholder="Username">
+          <input type="email" name="email" placeholder="Email Address">
+        </div>
+        <input type="password" name="password" placeholder="Password">
+        <input type="password" name="confirmPassword" placeholder="Confirm Password">
+        <button type="submit" class="btn">Register</button>
+      </form>
+      <div class="register-link">
+        Already have an account? <a href="#" id="switch-to-login">Login here✅</a>.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Your custom script -->
+<script src="login.js"></script>
+</body>
+</html>

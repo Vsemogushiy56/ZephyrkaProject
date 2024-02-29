@@ -96,6 +96,7 @@ h1,h2,h3,h4,h5,h6
   width: 100%;
   background-color: #fff;
   z-index: 10000;
+  top: 0;
 }
 
 .mobile-header .container
@@ -231,10 +232,7 @@ transition: .4s;
 /* ++++++++++home +++++++++++*/
 .home
 {
-  
- 
   height: 100vh;
-
 }
 .home-content
 {
@@ -245,6 +243,7 @@ transition: .4s;
   flex-direction: column;
   z-index: 1000;
   position: relative;
+ 
   
  
 }
@@ -343,6 +342,7 @@ transition: .4s;
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 5px 20px 0 rgba(69, 67, 96, .1);
+ 
 }
 
 .about-data .box::before {
@@ -705,8 +705,10 @@ background-color: #fff;
 .modal {
   display: none;
   position: fixed;
-  top: 50%;
+  top:50%;
+
   left: 50%;
+ bottom: -80%;
   transform: translate(-50%, -50%);
   max-width: 90vw;
   max-height: 90vh;
@@ -898,13 +900,20 @@ font-size: 17px;
 
 /*============CONTACT SECTION============*/
 
-
+.contact
+{
+  
+  scroll-margin-top: 400px;
+}
 .contact .section-title{
   margin-top: 400px;
 }
 
 .contact-content
 {
+  
+ 
+  margin-top: -100px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 50px;
@@ -928,6 +937,7 @@ font-size: 17px;
 border: none;
 outline: none;
 height: 65px;
+
 background-color: #fff;
 margin-bottom: 40px;
 width: 100%;
@@ -954,6 +964,19 @@ font-weight: 600;
 {
   display: flex;
   gap: 10px;
+  
+}
+.mode-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+.contact-right .btn
+{
+  font-family: "Kode Mono", monospace, sans-serif;
 }
 
 
@@ -1148,41 +1171,57 @@ font-weight: 600;
   }
 }
 @media (max-width : 576px)
+
 {
+ 
 .work-item
 {
-  width: 90%;
+  width: 75%;
 }
-}
-@media (max-width: 480px)
+.about-item
 {
-  .services-item
-  {
-    width: 85%;
-  }
-  .reviews-item .reviews-text
-  {
-    width: 96%;
-  }
-  .about-item h2
-{
-  font-size: 24px;
-}
-.about-item span 
-{
-  font-size: 14px;
-}
-.about-items ion-icon
-{
-  font-size: 30px;
-}
-.experience-boxs .box .experience-item
-{
-  padding-left: 40px;
-}
-.portfolio-filter li
-{
-width: 40px;
-}
+  margin-left: 35px;
 
+}
+}
+@media (max-width: 480px) {
+
+
+  .about-item {
+    margin-left: 35px;
+  }
+  .about-item h2 {
+    font-size: 24px;
+    border-left: 5px solid #fff; /* Adaugă această linie pentru a seta o bordură la stânga textului */
+    padding-left: 15px; /* Adaugă această linie pentru a mări spațiul dintre text și bordură */
+  }
+  .about-item span {
+    font-size: 14px;
+  }
+  .about-items ion-icon {
+    font-size: 30px;
+  }
+  .experience-boxs .box .experience-item {
+    padding-left: 40px;
+  }
+  .work .portfolio-filter {
+    column-gap: 25px !important;
+    margin-left: -10px !important;
+  }
+
+
+
+  .about .text {
+    font-size: 15px;
+    margin-top: -60px !important;
+  }
+}
+@media (max-width: 375px)
+{
+
+  .work .portfolio-filter {
+    column-gap: 25px !important;
+    margin-left: -30px !important;
+  }
+ 
 }

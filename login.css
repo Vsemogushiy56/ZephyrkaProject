@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+/*---LOGIN SECTION---*/
+
+.login-form {
+  display: none;
+}
+
+.login-form.active {
+  display: block;
+}
+.login {
+  
+  padding: 200px 0;
+}
+
+.login-container {
+  max-width: 600px; /* Poți schimba la dimensiunea dorită */
+  width: 100%; /* Lățime de 100% */
+  padding: 30px; /* Poți ajusta în funcție de preferințele tale */
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.login-form h2 {
+  text-align: center;
+  color: #333;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.login-form input {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  outline: none;
+ 
+  border-radius: 10px;
+  background-color: #fff;
+  padding-left: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0,.1);
+border-radius: 50px;
+color: #333;
+font-size: 15px;
+font-weight: 300;
+opacity: 0.6;
+}
+
+
+.login-form button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #45a049;
+}
+
+.register-link {
+  margin-top: 20px;
+  text-align: center;
+  color: #666;
+}
+
+.register-link a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
